@@ -1,0 +1,76 @@
+<html>
+    <head> 
+        <title>
+            Icons
+    
+        </title>
+
+        <style>
+            .row{
+                width: 720px;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding: 20px;
+            }
+        </style>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script> 
+    </head>
+
+    <body style="background-color: rgb(42, 100, 125);">
+
+    <div class="row">
+
+    <div class="image-container"><img id="Sunny" src="img/Sunny.png" width="200" height="200"/></div>
+    <div class="image-container"><img id="Windy" src="img/Windy.png" width="200" height="200"/></div>
+    <div class="image-container"><img id="Cloud" src="img/Cloud 2.png" width="200" height="200"/></div>
+    </div>
+
+    <div class="row">
+
+    <div class="image-container"><img id="Hail" src="img/Hail.png" width="200" height="200"/></div>
+    <div class="image-container"><img id="Lightning" src="img/Lightning.png" width="200" height="200"/></div>
+    <div class="image-container"><img id="Rain" src="img/Rain.png" width="200" height="200"/></div>
+    </div>
+
+    <div class="row">
+
+    <div class="image-container"><img id="Ice" src="img/Ice.png" width="200" height="200"/></div>
+    <div class="image-container"><img id="Ocean" src="img/Ocean.png" width="200" height="200"/></div>
+    <div class="image-container"><img id="Fire" src="img/Fire.png" width="200" height="200"/></div>
+    </div>
+
+
+    <script> 
+    var sound1 = new buzz.sound("Sounds/04.wav");
+    var sound2 = new buzz.sound("Sounds/Cloud.wav");
+    var sound3 = new buzz.sound("Sounds/Fire.wav");
+    var sound4 = new buzz.sound("Sounds/Hail.wav");
+    var sound5 = new buzz.sound("Sounds/Ice.wav");
+    var sound6 = new buzz.sound("Sounds/Lightning.wav");
+    var sound7 = new buzz.sound("Sounds/Rain.wav");
+    var sound8 = new buzz.sound("Sounds/Sunny.wav");
+    var sound9 = new buzz.sound("Sounds/Windy.wav");
+
+    
+    window.onload = function() {
+        document.getElementById('Ocean').addEventListener('click', function () {sound1.play();});
+        document.getElementById('Cloud').addEventListener('click', function () {sound2.play();});
+        document.getElementById('Fire').addEventListener('click', function () {sound3.play();});
+        document.getElementById('Hail').addEventListener('click', function () {sound4.play();});
+        document.getElementById('Ice').addEventListener('click', function () {sound5.play();});
+        document.getElementById('Lightning').addEventListener('click', function () {sound6.play();});
+        document.getElementById('Rain').addEventListener('click', function () {sound7.play();});
+        document.getElementById('Sunny').addEventListener('click', function () {sound8.play();});
+        document.getElementById('Windy').addEventListener('click', function () {sound9.play();});
+    }
+    </script>
+    
+
+
+
+</body>
+
+</html>
